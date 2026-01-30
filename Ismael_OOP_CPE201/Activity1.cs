@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Ismael_OOP_CPE201
 {
-    public partial class Form1 : Form
+    public partial class Activity1 : Form
     {
-        public Form1()
+        public Activity1()
         {
             InitializeComponent();
       
