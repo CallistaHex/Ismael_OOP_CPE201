@@ -1,6 +1,6 @@
 ﻿namespace Ismael_OOP_CPE201
 {
-    partial class Activity1
+    partial class Lesson8Example7
     {
         /// <summary>
         /// Required designer variable.
@@ -33,8 +33,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.priceTxtbox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.qtyTxtbox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.amount_PaidTxtbox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cash_givenTxtbox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.changeTxtbox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.calculateBtn = new System.Windows.Forms.Button();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
@@ -70,10 +79,11 @@
             // 
             // itemnameTxtbox
             // 
-            this.itemnameTxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemnameTxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemnameTxtbox.Location = new System.Drawing.Point(102, 493);
             this.itemnameTxtbox.Name = "itemnameTxtbox";
-            this.itemnameTxtbox.Size = new System.Drawing.Size(225, 38);
+            this.itemnameTxtbox.ReadOnly = true;
+            this.itemnameTxtbox.Size = new System.Drawing.Size(150, 30);
             this.itemnameTxtbox.TabIndex = 15;
             this.itemnameTxtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.itemnameTxtbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -82,7 +92,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 509);
+            this.label1.Location = new System.Drawing.Point(6, 499);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 20);
             this.label1.TabIndex = 16;
@@ -91,10 +101,11 @@
             // 
             // priceTxtbox
             // 
-            this.priceTxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.priceTxtbox.Location = new System.Drawing.Point(434, 493);
+            this.priceTxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priceTxtbox.Location = new System.Drawing.Point(102, 536);
             this.priceTxtbox.Name = "priceTxtbox";
-            this.priceTxtbox.Size = new System.Drawing.Size(225, 41);
+            this.priceTxtbox.ReadOnly = true;
+            this.priceTxtbox.Size = new System.Drawing.Size(150, 30);
             this.priceTxtbox.TabIndex = 17;
             this.priceTxtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -102,31 +113,120 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(358, 509);
+            this.label2.Location = new System.Drawing.Point(6, 542);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 20);
             this.label2.TabIndex = 18;
             this.label2.Text = "Price:";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(258, 499);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 20);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Quantity:";
+            // 
+            // qtyTxtbox
+            // 
+            this.qtyTxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qtyTxtbox.Location = new System.Drawing.Point(340, 493);
+            this.qtyTxtbox.Name = "qtyTxtbox";
+            this.qtyTxtbox.Size = new System.Drawing.Size(100, 30);
+            this.qtyTxtbox.TabIndex = 20;
+            this.qtyTxtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.qtyTxtbox.TextChanged += new System.EventHandler(this.qtyTxtbox_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(258, 542);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(113, 20);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "Amount Paid:";
+            // 
+            // amount_PaidTxtbox
+            // 
+            this.amount_PaidTxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amount_PaidTxtbox.Location = new System.Drawing.Point(377, 536);
+            this.amount_PaidTxtbox.Name = "amount_PaidTxtbox";
+            this.amount_PaidTxtbox.ReadOnly = true;
+            this.amount_PaidTxtbox.Size = new System.Drawing.Size(150, 30);
+            this.amount_PaidTxtbox.TabIndex = 22;
+            this.amount_PaidTxtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(533, 499);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(100, 20);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Cash Given:";
+            // 
+            // cash_givenTxtbox
+            // 
+            this.cash_givenTxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cash_givenTxtbox.Location = new System.Drawing.Point(639, 493);
+            this.cash_givenTxtbox.Name = "cash_givenTxtbox";
+            this.cash_givenTxtbox.Size = new System.Drawing.Size(150, 30);
+            this.cash_givenTxtbox.TabIndex = 24;
+            this.cash_givenTxtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(533, 542);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(69, 20);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Change:";
+            // 
+            // changeTxtbox
+            // 
+            this.changeTxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changeTxtbox.Location = new System.Drawing.Point(608, 536);
+            this.changeTxtbox.Name = "changeTxtbox";
+            this.changeTxtbox.ReadOnly = true;
+            this.changeTxtbox.Size = new System.Drawing.Size(150, 30);
+            this.changeTxtbox.TabIndex = 26;
+            this.changeTxtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(681, 493);
+            this.button1.Location = new System.Drawing.Point(795, 493);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 43);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "new";
+            this.button1.Size = new System.Drawing.Size(99, 35);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "New";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(786, 491);
+            this.button2.Location = new System.Drawing.Point(900, 493);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 43);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "exit";
+            this.button2.Size = new System.Drawing.Size(99, 35);
+            this.button2.TabIndex = 28;
+            this.button2.Text = "Exit";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // calculateBtn
+            // 
+            this.calculateBtn.Location = new System.Drawing.Point(795, 534);
+            this.calculateBtn.Name = "calculateBtn";
+            this.calculateBtn.Size = new System.Drawing.Size(204, 35);
+            this.calculateBtn.TabIndex = 29;
+            this.calculateBtn.Text = "Calculate";
+            this.calculateBtn.UseVisualStyleBackColor = true;
+            this.calculateBtn.Click += new System.EventHandler(this.calculateBtn_Click);
             // 
             // pictureBox15
             // 
@@ -303,9 +403,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1103, 560);
+            this.ClientSize = new System.Drawing.Size(1103, 580);
+            this.Controls.Add(this.calculateBtn);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.changeTxtbox);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.cash_givenTxtbox);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.amount_PaidTxtbox);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.qtyTxtbox);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.priceTxtbox);
             this.Controls.Add(this.label1);
@@ -326,7 +435,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Activity1";
-            this.Text = "Form1";
+            this.Text = "Activity 1 - Ordering System";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
@@ -369,9 +478,17 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox priceTxtbox;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox qtyTxtbox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox amount_PaidTxtbox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox cash_givenTxtbox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox changeTxtbox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button calculateBtn;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
-

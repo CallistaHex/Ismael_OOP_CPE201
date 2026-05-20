@@ -279,5 +279,35 @@ namespace Ismael_OOP_CPE201.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_02_06_173106 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2026-02-06 173106", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_02_17_130532 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2026-02-17 130532", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_02_17_132402 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2026-02-17 132402", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

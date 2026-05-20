@@ -1,6 +1,6 @@
 ﻿namespace Ismael_OOP_CPE201
 {
-    partial class Activity2
+    partial class Lesson8Example8
     {
         /// <summary>
         /// Required designer variable.
@@ -408,7 +408,6 @@
             this.radiobutton_seniorcitizen.TabStop = true;
             this.radiobutton_seniorcitizen.Text = "Senior Citizen";
             this.radiobutton_seniorcitizen.UseVisualStyleBackColor = true;
-        
             // 
             // label25
             // 
@@ -816,6 +815,7 @@
             this.groupBox4.TabIndex = 85;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Items Display";
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // pictureBox20
             // 
@@ -1032,7 +1032,7 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // Activity2
+            // Lesson8Example8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1099,7 +1099,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox4);
-            this.Name = "Activity2";
+            this.Name = "Lesson8Example8";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Activity2_Load);
             this.groupBox1.ResumeLayout(false);

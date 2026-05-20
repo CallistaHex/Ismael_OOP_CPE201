@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PayrollApplication;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,8 @@ namespace Ismael_OOP_CPE201
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Activity2());    
+            Application.Run(new Lesson8Example4());    
         }
     }
 }
+    
